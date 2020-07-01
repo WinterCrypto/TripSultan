@@ -1,0 +1,283 @@
+body {
+  color: #78899E;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* HEADINGS & SECTIONS */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.colored-section {
+  color: #fff;
+  background-color: #81BDE8;
+}
+
+.light-section {
+  background-color: #fff;
+
+}
+
+/* CONTAINERS */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* ==========NAVBAR SECTION========= */
+.navbar {
+  background-color: #81BDE8;
+}
+
+.nav-item {
+  text-align: left;
+  padding: 0 8px;
+}
+
+/* Specfic nav-link */
+.navbar-dark .navbar-nav .nav-link {}
+
+/* Logo */
+.logo-anchor {
+  position: relative;
+  width: 200px;
+  height: 68.02px;
+  margin: auto;
+}
+
+.logo1 {
+  width: 200px;
+  height: 68.02px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ==========TITLE SECTION========= */
+#title, #footer {
+  background-color: #E8ECF0;
+}
+
+.title-intro {
+  color: #39659E;
+  font-size: 3.15rem;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.download-button1, .download-button2, .cta-download-button1, .cta-download-button2{
+  margin: 5% 3% 5% 0;
+}
+
+.btn-bg {
+  background-color: #81BDE8;
+  border-color: #FFF;
+}
+
+.download-button2 {
+  color: #607B9F;
+  border-color: #81BDE8;
+}
+
+.cta-btn-bg {
+  background-color: #39659E;
+  border-color: #FFF;
+}
+
+.cta-download-button2 {
+  color: #607B9F;
+  border-color: #39659E;
+}
+
+.price-btn-bg {
+  background-color: #39659E;
+  border-color: #FFF;
+}
+
+.price-download-button2 {
+  color: #FFF;
+  border-color: #39659E;
+}
+
+/* .search-button {
+  border-color: #FFF;
+}*/
+/* ----Main Image----- */
+.main-image {
+  position: absolute;
+  right: 30%;
+  transform: rotate(25deg);
+  width: 55%;
+}
+
+/* Image Rollover Circle */
+.hover14 figure {
+  position: relative;
+}
+
+.hover14 figure::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.hover14 figure:hover::before {
+  -webkit-animation: circle .50s;
+  animation: circle .50s;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+/* ==========FEATURES SECTION========= */
+#features {
+  position: relative;
+}
+.feat-box {
+  padding: 5%;
+}
+
+.feat-icon {
+  color: #81BDE8;
+  margin-bottom: 1rem;
+}
+
+.feat-icon:hover {
+  color: #39659E;
+}
+
+.feat-title {
+  color: #39659E;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ==========TESTIMONIALS SECTION========= */
+.price-heading {
+  color: #39659E;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* ==========PRESS SECTION========= */
+#press {
+  padding-bottom: 3%;
+}
+
+.press-image {
+  margin: 20px 20px 50px;
+  width: 15%
+}
+/* ==========PRICING SECTION========= */
+.price-column {
+  padding: 3% 2%;
+}
+.card-h3 {
+  color: #39659E;
+}
+
+/* ==========CALL TO ACTION SECTION========= */
+/* ==========FOOTER SECTION========= */
+.footer {
+  padding: 70px 0;
+}
+
+.footer-icons {
+  color: #81BDE8;
+  margin: 10px;
+}
+
+.footer-icons:hover {
+  color: #339AF0;
+}
+
+/* ---------- */
+.copyright {
+  color: #607B9F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/* ===========MEDIA QUERY SECTION============ */
+@media (max-width: 992px) {
+  .title-intro {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .main-image {
+    position: static;
+    right: 30%;
+    transform: rotate(0deg);
+    width: 45%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .big-heading {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+}

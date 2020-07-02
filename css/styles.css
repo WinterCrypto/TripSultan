@@ -44,8 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px;
 }
 
-/* Specfic nav-link */
-.navbar-dark .navbar-nav .nav-link {}
 
 /* Logo */
 .logo-anchor {
@@ -253,18 +251,40 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 
-/* ===========MEDIA QUERY SECTION============ */
+/* ===========MEDIA QUERY TABLET SECTION============ */
 @media (max-width: 992px) {
+  .logo-anchor {
+    position: relative;
+    width: 350px;
+    height: 119.035px;
+  }
+
+  .logo1 {
+    width: 350px;
+    height: 119.035px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
   .title-intro {
     font-size: 2.75rem;
     text-align: center;
   }
 
-  .main-image {
+  /* .main-image {
     position: static;
     right: 30%;
     transform: rotate(0deg);
     width: 45%;
+    margin: auto;
+    padding-top: 20px;
+  } */
+  .main-image {
+    position: static;
+    right: 30%;
+    transform: rotate(0deg);
+    width: 60%;
     margin: auto;
     padding-top: 20px;
   }
@@ -278,6 +298,62 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
+  }
+
+  .testimonial-image {
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+
+}
+
+/* ===========MEDIA QUERY MOBILE SECTION============ */
+@media (max-width: 600px) {
+  /* Logo */
+  .logo-anchor {
+    position: relative;
+    width: 300px;
+    height: 102.03px;
+  }
+
+  .logo1 {
+    width: 300px;
+    height: 102.03px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .title-intro {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .main-image {
+    position: static;
+    right: 30%;
+    transform: rotate(0deg);
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .big-heading {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    border-radius: 100%;
+    margin: 20px;
   }
 
 }

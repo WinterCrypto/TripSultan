@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .light-section {
   background-color: #fff;
-
 }
 
 /* CONTAINERS */
@@ -43,7 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   padding: 0 8px;
 }
-
 
 /* Logo */
 .logo-anchor {
@@ -74,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-.download-button1, .download-button2, .cta-download-button1, .cta-download-button2{
+.download-button1, .download-button2, .cta-download-button1, .cta-download-button2 {
   margin: 5% 3% 5% 0;
 }
 
@@ -181,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 #features {
   position: relative;
 }
+
 .feat-box {
   padding: 5%;
 }
@@ -220,10 +219,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 20px 50px;
   width: 15%
 }
+
 /* ==========PRICING SECTION========= */
 .price-column {
   padding: 3% 2%;
 }
+
 .card-h3 {
   color: #39659E;
 }
@@ -253,6 +254,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===========MEDIA QUERY TABLET SECTION============ */
 @media (max-width: 992px) {
+  .navbar-toggler-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
   .logo-anchor {
     position: relative;
     width: 350px;
@@ -272,14 +282,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  /* .main-image {
-    position: static;
-    right: 30%;
-    transform: rotate(0deg);
-    width: 45%;
-    margin: auto;
-    padding-top: 20px;
-  } */
   .main-image {
     position: static;
     right: 30%;
@@ -305,11 +307,19 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 100%;
     margin: 20px;
   }
-
 }
 
 /* ===========MEDIA QUERY MOBILE SECTION============ */
 @media (max-width: 600px) {
+  .navbar-toggler-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
   /* Logo */
   .logo-anchor {
     position: relative;
@@ -355,5 +365,4 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 100%;
     margin: 20px;
   }
-
 }

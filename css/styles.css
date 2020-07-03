@@ -1,5 +1,4 @@
 body {
-  color: #78899E;
   font-family: 'Montserrat';
   text-align: center;
 }
@@ -8,9 +7,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* HEADINGS & SECTIONS */
+/* HEADINGS */
 .big-heading {
   font-size: 3.5rem;
+  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -19,16 +19,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+/* SECTIONS  */
 .colored-section {
   color: #fff;
   background-color: #81BDE8;
 }
 
 .light-section {
+  color: #78899E;
   background-color: #fff;
 }
 
-/* CONTAINERS */
 .container-fluid {
   padding: 7% 15%;
 }
@@ -131,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   width: 0;
   height: 0;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -200,8 +201,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========TESTIMONIALS SECTION========= */
-.price-heading {
-  color: #39659E;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -221,12 +223,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========PRICING SECTION========= */
+.price-heading {
+  color: #39659E;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .price-column {
   padding: 3% 2%;
 }
 
 .card-h3 {
   color: #39659E;
+}
+
+.price-big-text {
+  line-height: 1.5;
 }
 
 /* ==========CALL TO ACTION SECTION========= */
@@ -252,8 +264,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 
-/* ===========MEDIA QUERY TABLET SECTION============ */
+/* ===========MEDIA_QUERY_TABLET============ */
 @media (max-width: 992px) {
+
+  /* ==========NavigationBar @Media-Tablet========= */
   .navbar-toggler-icon {
     width: 60px;
     height: 60px;
@@ -277,6 +291,14 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
   }
 
+  /* ==========Headings @Media-Tablet========= */
+  .big-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  /* ==========Title @Media-Tablet========= */
   .title-intro {
     font-size: 2.75rem;
     text-align: center;
@@ -291,12 +313,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 20px;
   }
 
-  .big-heading {
-    font-size: 2.5rem;
-    line-height: 1.5;
-  }
-
-  .section-heading {
+  /* ==========Testimonials @Media-Tablet========= */
+  .testimonial-text {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
@@ -309,8 +327,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ===========MEDIA QUERY MOBILE SECTION============ */
+/* ===========MEDIA_QUERY_MOBILE============ */
 @media (max-width: 600px) {
+
+  /* ==========NavigationBar @Media-Mobile========= */
   .navbar-toggler-icon {
     width: 60px;
     height: 60px;
@@ -320,7 +340,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
   }
 
-  /* Logo */
   .logo-anchor {
     position: relative;
     width: 300px;
@@ -335,6 +354,14 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
   }
 
+  /* ==========Headings @Media-Mobile========= */
+  .big-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  /* ==========Title @Media-Mobile========= */
   .title-intro {
     font-size: 2.3rem;
     text-align: center;
@@ -349,12 +376,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 20px;
   }
 
-  .big-heading {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  .section-heading {
+  /* ==========Testimonials @Media-Mobile========= */
+  .testimonial-text {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
@@ -364,5 +387,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 25%;
     border-radius: 100%;
     margin: 20px;
+  }
+
+  /* ==========Pricing @Media-Mobile========= */
+  .price-heading {
+    color: #39659E;
+    font-size: 2.3rem;
+    line-height: 1.5;
   }
 }
